@@ -15,11 +15,11 @@ def pythagoras_branch(levels, trunkLen, angle, shrinkFactor):
         color("red")
         forward(trunkLen)
         right(angle)
-        pythagoras_branch(levels-1, trunkLen*0.8, angle, shrinkFactor)
+        pythagoras_branch(levels-1, trunkLen*0.7, angle, shrinkFactor)
         left(90)
-        pythagoras_branch(levels-1, trunkLen*0.8, angle, shrinkFactor)
+        pythagoras_branch(levels-1, trunkLen*0.7, angle, shrinkFactor)
         right(angle)
         backward(trunkLen)
     
 
-middleware(5)
+middleware(10)
