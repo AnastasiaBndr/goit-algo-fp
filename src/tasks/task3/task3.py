@@ -23,9 +23,9 @@ ver_frequency= [random.randint(6,10) for _ in range(len(vertexes))]
 edges = [[random.choices(vertexes, weights=ver_frequency)[0], random.choices(vertexes, weights=ver_frequency)[0]] for _ in range(len(vertexes)-1)]
 weights=[random.randint(0, points_amount) for _ in range(0,len(edges))]
 
-vertex=4
+vertex=vertexes[0]
 
 G = generate_graph(edges, vertexes,weights)
 
-print(f"{bcolors.OKGREEN}Dijkstra:\n{bcolors.ENDC} {pretty_print_dict(dijkstra(G, vertex))}")
+print(f"{bcolors.OKGREEN}Dijkstra for vertex {vertex}:\n{bcolors.ENDC} {pretty_print_dict(dijkstra(G, vertex))}")
 draw_graph(G)

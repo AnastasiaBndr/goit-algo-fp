@@ -1,7 +1,6 @@
 from turtle import *
-import math
 from random import randint
-
+3
 def middleware(level_of_recursion:int, size=300):
     Screen()  
     Turtle()  
@@ -21,5 +20,8 @@ def pythagoras_branch(levels, trunkLen, angle, shrinkFactor):
         right(angle)
         backward(trunkLen)
     
-
-middleware(10)
+print("Write level of recursion:")
+x=input()
+if x.isnumeric():
+    middleware(int(x))
+else:print("Not a number!")

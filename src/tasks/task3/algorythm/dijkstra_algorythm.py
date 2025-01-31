@@ -10,8 +10,7 @@ def dijkstra(graph:nx.Graph, start):
     
     while heap:
         current_distance, current_vertex=heapq.heappop(heap)
-        
-
+    
         if current_distance > distances[current_vertex]:
             continue
         print(graph[current_vertex].items())

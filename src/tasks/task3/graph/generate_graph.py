@@ -1,5 +1,4 @@
 import networkx as nx
-import matplotlib.pyplot as plt
 
 def generate_graph(edges,vertex,weights) -> nx.Graph:
     G = nx.Graph()
