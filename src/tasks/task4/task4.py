@@ -1,5 +1,4 @@
 import uuid
-from collections import deque
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -76,7 +75,6 @@ def heapify_up(root, node):
             else:
                 break
 def get_parent(root, node):
-        # Шукаємо батьківський вузол для даного
         queue = [root]
         while queue:
             curr = queue.pop(0)
@@ -90,23 +88,13 @@ def get_parent(root, node):
 
 root = Node(10)
 insert_into_heap(root, 5)
-draw_tree(root)
 insert_into_heap(root, 12)
-draw_tree(root)
 insert_into_heap(root, 8)
-draw_tree(root)
 insert_into_heap(root, 7)
-draw_tree(root)
 insert_into_heap(root, 14)
-draw_tree(root)
+insert_into_heap(root, 123)
 insert_into_heap(root, 45)
-draw_tree(root)
-insert_into_heap(root, 67)
-draw_tree(root)
 insert_into_heap(root, 55)
-draw_tree(root)
 insert_into_heap(root, 34)
-draw_tree(root)
 
-# Відображення дерева
 draw_tree(root)
